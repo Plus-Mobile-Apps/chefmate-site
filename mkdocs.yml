@@ -14,6 +14,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Download: download.md
   - FAQ: faq.md
   - Privacy Policy: privacy-policy.md
   - Terms of Use: terms-of-use.md
