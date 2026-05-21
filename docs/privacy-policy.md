@@ -1,61 +1,64 @@
 # Privacy Policy
 
-*Last updated: April 21, 2026*
+Plus Mobile Apps built the Chef Mate+ app as a Commercial app. This SERVICE is provided by Plus Mobile Apps and is intended for use as is.
 
-## Introduction
+This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
 
-Chef Mate ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you use the Chef Mate application ("App").
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
 
-## Information We Collect
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at Chef Mate+ unless otherwise defined in this Privacy Policy.
 
-### Information You Provide
-- Account information (name, email address)
-- Profile preferences (dietary restrictions, favorite cuisines)
-- Content you create (saved recipes, meal plans, grocery lists)
+## Information Collection and Use
 
-### Information Collected Automatically
-- Device information (device type, operating system, unique device identifiers)
-- Usage data (features used, interactions, crash logs)
-- Log data (access times, pages viewed, app performance)
+For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to email, name. The information that we request will be retained by us and used as described in this privacy policy.
 
-## How We Use Your Information
+The app does use third-party services that may collect information used to identify you.
 
-We use the information we collect to:
+Link to the privacy policy of third-party service providers used by the app
 
-- Provide and maintain the App
-- Personalize your experience and recommend recipes
-- Communicate with you about updates and support
-- Analyze usage to improve the App
-- Ensure the security of our services
+*   [Google Play Services](https://www.google.com/policies/privacy/)
+*   [Google Analytics for Firebase](https://firebase.google.com/support/privacy)
+*   [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
 
-## Sharing Your Information
+## Log Data
 
-We do not sell your personal information. We may share information with:
+We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol ("IP") address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.
 
-- **Service providers** who help us operate the App
-- **Legal authorities** when required by law
-- **Business partners** only with your consent
+## Cookies
 
-## Data Retention
+Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
 
-We retain your information for as long as your account is active or as needed to provide services. You may request deletion of your data at any time.
+This Service does not use these "cookies" explicitly. However, the app may use third-party code and libraries that use "cookies" to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
 
-## Your Rights
+## Service Providers
 
-You have the right to:
+We may employ third-party companies and individuals due to the following reasons:
 
-- Access, update, or delete your personal information
-- Opt out of marketing communications
-- Request a copy of your data
+*   To facilitate our Service;
+*   To provide the Service on our behalf;
+*   To perform Service-related services; or
+*   To assist us in analyzing how our Service is used.
+
+We want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
 
 ## Security
 
-We use industry-standard measures to protect your information, but no method of transmission over the internet is 100% secure.
+We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.
 
-## Changes to This Policy
+## Links to Other Sites
 
-We may update this Privacy Policy from time to time. We will notify you of changes by posting the updated policy within the App.
+This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+
+## Children's Privacy
+
+These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do the necessary actions.
+
+## Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.
+
+This policy is effective as of 2026-05-20
 
 ## Contact Us
 
-If you have questions about this Privacy Policy, contact us at **privacy@chefmateapp.com**.
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at andrew@plusmobileapps.com.
