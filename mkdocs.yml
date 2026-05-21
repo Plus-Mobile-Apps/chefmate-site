@@ -13,7 +13,8 @@ theme:
     - navigation.sections
 
 nav:
-  - About: index.md
+  - Home: index.md
   - FAQ: faq.md
   - Privacy Policy: privacy-policy.md
   - Terms of Use: terms-of-use.md
+  - About: about.md

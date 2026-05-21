@@ -1,52 +1,45 @@
 # Terms of Use
 
-*Last updated: April 21, 2026*
+## End-User License Agreement (EULA) of Chef Mate+
 
-## Acceptance of Terms
+This End-User License Agreement ("EULA") is a legal agreement between you and Chef Mate+
 
-By downloading, accessing, or using Chef Mate ("App"), you agree to be bound by these Terms of Use. If you do not agree, do not use the App.
+This EULA agreement governs your acquisition and use of our Chef Mate+ software ("Software") directly from Chef Mate+ or indirectly through a Chef Mate+ authorized reseller or distributor (a "Reseller").
 
-## Use of the App
+Please read this EULA agreement carefully before completing the installation process and using the Chef Mate+ software. It provides a license to use the Chef Mate+ software and contains warranty information and liability disclaimers.
 
-You agree to use Chef Mate only for lawful purposes. You must not:
+If you register for a free trial of the Chef Mate+ software, this EULA agreement will also govern that trial. By clicking "accept" or installing and/or using the Chef Mate+ software, you are confirming your acceptance of the Software and agreeing to become bound by the terms of this EULA agreement.
 
-- Use the App in any way that violates applicable laws or regulations
-- Attempt to gain unauthorized access to the App or its systems
-- Distribute malware or other harmful code through the App
-- Use the App to harass, abuse, or harm others
+If you are entering into this EULA agreement on behalf of a company or other legal entity, you represent that you have the authority to bind such entity and its affiliates to these terms and conditions. If you do not have such authority or if you do not agree with the terms and conditions of this EULA agreement, do not install or use the Software, and you must not accept this EULA agreement.
 
-## Accounts
+This EULA agreement shall apply only to the Software supplied by Chef Mate+ herewith regardless of whether other software is referred to or described herein. The terms also apply to any Chef Mate+ updates, supplements, Internet-based services, and support services for the Software, unless other terms accompany those items on delivery. If so, those terms apply.
 
-You are responsible for maintaining the confidentiality of your account credentials. You agree to notify us immediately of any unauthorized use of your account.
+## License Grant
 
-## Intellectual Property
+Chef Mate+ hereby grants you a personal, non-transferable, non-exclusive licence to use the Chef Mate+ software on your devices in accordance with the terms of this EULA agreement.
 
-All content, features, and functionality of the App are owned by Chef Mate and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, or create derivative works without our permission.
+You are permitted to load the Chef Mate+ software (for example a PC, laptop, mobile or tablet) under your control. You are responsible for ensuring your device meets the minimum requirements of the Chef Mate+ software.
 
-## User Content
+You are not permitted to:
 
-By submitting content to the App (such as recipes or reviews), you grant Chef Mate a non-exclusive, royalty-free, worldwide license to use, display, and distribute that content within the App.
+* Edit, alter, modify, adapt, translate or otherwise change the whole or any part of the Software nor permit the whole or any part of the Software to be combined with or become incorporated in any other software, nor decompile, disassemble or reverse engineer the Software or attempt to do any such things
+* Reproduce, copy, distribute, resell or otherwise use the Software for any commercial purpose
+* Allow any third party to use the Software on behalf of or for the benefit of any third party
+* Use the Software in any way which breaches any applicable local, national or international law
+* Use the Software for any purpose that Chef Mate+ considers is a breach of this EULA agreement
 
-## Disclaimer of Warranties
+## Intellectual Property and Ownership
 
-The App is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not guarantee that the App will be uninterrupted, error-free, or free of harmful components.
+Chef Mate+ shall at all times retain ownership of the Software as originally downloaded by you and all subsequent downloads of the Software by you. The Software (and the copyright, and other intellectual property rights of whatever nature in the Software, including any modifications made thereto) are and shall remain the property of Chef Mate+.
 
-## Limitation of Liability
-
-To the fullest extent permitted by law, Chef Mate shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of the App.
+Chef Mate+ reserves the right to grant licenses to use the Software to third parties.
 
 ## Termination
 
-We reserve the right to suspend or terminate your access to the App at any time, with or without notice, for any reason.
+This EULA agreement is effective from the date you first use the Software and shall continue until terminated. You may terminate it at any time upon written notice to Chef Mate+.
 
-## Changes to These Terms
-
-We may modify these Terms of Use at any time. Continued use of the App after changes are posted constitutes acceptance of the updated terms.
+It will also terminate immediately if you fail to comply with any term of this EULA agreement. Upon such termination, the licenses granted by this EULA agreement will immediately terminate and you agree to stop all access and use of the Software. The provisions that by their nature continue and survive will survive any termination of this EULA agreement.
 
 ## Governing Law
 
-These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Chef Mate operates.
-
-## Contact Us
-
-If you have questions about these Terms of Use, contact us at **legal@chefmateapp.com**.
+This EULA agreement, and any dispute arising out of or in connection with this EULA agreement, shall be governed by and construed in accordance with the laws of us.
