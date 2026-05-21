@@ -16,9 +16,8 @@ The app does use third-party services that may collect information used to ident
 
 Link to the privacy policy of third-party service providers used by the app
 
-*   [Google Play Services](https://www.google.com/policies/privacy/)
-*   [Google Analytics for Firebase](https://firebase.google.com/support/privacy)
-*   [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
+*   [Supabase](https://supabase.com/privacy)
+*   [Bugsnag](https://smartbear.com/privacy/)
 
 ## Log Data
 
@@ -61,4 +60,4 @@ This policy is effective as of 2026-05-20
 
 ## Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at andrew@plusmobileapps.com.
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at support@plusmobileapps.com.
