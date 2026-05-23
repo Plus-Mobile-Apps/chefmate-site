@@ -1,10 +1,12 @@
 site_name: Chef Mate
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   palette:
     scheme: default
-    primary: green
-    accent: light green
+    primary: custom
+    accent: custom
   font:
     text: Roboto
     code: Roboto Mono

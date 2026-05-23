@@ -6,7 +6,7 @@
 Chef Mate is a cooking companion app that helps you discover recipes, plan meals, and generate grocery lists.
 
 ### Is Chef Mate free to use?
-Chef Mate is free to download with optional premium features available through a subscription.
+Chef Mate is free to download and use. Premium features may be added in the future, but everything is free today.
 
 ### What platforms is Chef Mate available on?
 Chef Mate is available on iOS and Android.
