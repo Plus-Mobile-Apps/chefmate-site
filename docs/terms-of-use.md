@@ -14,31 +14,46 @@ If you are entering into this EULA agreement on behalf of a company or other leg
 
 This EULA agreement shall apply only to the Software supplied by Chef Mate+ herewith regardless of whether other software is referred to or described herein. The terms also apply to any Chef Mate+ updates, supplements, Internet-based services, and support services for the Software, unless other terms accompany those items on delivery. If so, those terms apply.
 
+For the avoidance of doubt, this agreement distinguishes between three things:
+
+* **Source Code** — the publicly available source code for Chef Mate+, hosted at [github.com/Plus-Mobile-Apps/chef-mate](https://github.com/Plus-Mobile-Apps/chef-mate) and licensed under the Apache License, Version 2.0.
+* **Service** — the hosted backend, accounts, sync, and any other online services operated by Plus Mobile Apps LLC that the Chef Mate+ application connects to.
+* **Trademarks** — the "Chef Mate", "Chef Mate+", and "Plus Mobile Apps" names, the Chef Mate icon and logo, and any associated brand assets.
+
 ## License Grant
 
-Chef Mate+ hereby grants you a personal, non-transferable, non-exclusive licence to use the Chef Mate+ software on your devices in accordance with the terms of this EULA agreement.
+**Source Code.** The Chef Mate+ source code is made available to you under the Apache License, Version 2.0 (the "Apache License"), the full text of which is included in the source repository at [github.com/Plus-Mobile-Apps/chef-mate](https://github.com/Plus-Mobile-Apps/chef-mate). The Apache License grants you the right to use, reproduce, modify, distribute, and create derivative works of the source code on the terms set out in that license, including for commercial purposes. **In the event of any conflict between this EULA and the Apache License with respect to the Source Code, the Apache License controls.**
 
-You are permitted to load the Chef Mate+ software (for example a PC, laptop, mobile or tablet) under your control. You are responsible for ensuring your device meets the minimum requirements of the Chef Mate+ software.
+**Service.** Subject to your compliance with this EULA, Plus Mobile Apps LLC grants you a personal, non-transferable, non-exclusive, revocable license to access and use the Service through the Chef Mate+ application on devices you own or control. The Apache License does not grant any right to use the Service; access to the Service is governed solely by this EULA.
+
+**Trademarks.** No right or license is granted under this EULA or under the Apache License to use the Trademarks. The trademark exclusion in Section 6 of the Apache License applies. Any use of the Trademarks requires prior written permission from Plus Mobile Apps LLC.
+
+You are responsible for ensuring your device meets the minimum requirements of the Chef Mate+ application.
 
 You are not permitted to:
 
-* Edit, alter, modify, adapt, translate or otherwise change the whole or any part of the Software nor permit the whole or any part of the Software to be combined with or become incorporated in any other software, nor decompile, disassemble or reverse engineer the Software or attempt to do any such things
-* Reproduce, copy, distribute, resell or otherwise use the Software for any commercial purpose
-* Allow any third party to use the Software on behalf of or for the benefit of any third party
-* Use the Software in any way which breaches any applicable local, national or international law
-* Use the Software for any purpose that Chef Mate+ considers is a breach of this EULA agreement
+* Use the Service in any way that breaches any applicable local, national, or international law, or that infringes the rights of any third party
+* Interfere with, disrupt, or attempt to gain unauthorized access to the Service or to any account, server, or network connected to the Service
+* Scrape, harvest, or otherwise collect data from the Service except through documented application interfaces and within any published rate limits
+* Use the Service to send spam, harassment, or other abusive content
+* Resell, sublicense, or commercially redistribute access to the Service (the underlying Source Code remains separately available to you under the Apache License)
+* Use the Trademarks in any manner not expressly permitted by Plus Mobile Apps LLC
 
 ## Intellectual Property and Ownership
 
-Chef Mate+ shall at all times retain ownership of the Software as originally downloaded by you and all subsequent downloads of the Software by you. The Software (and the copyright, and other intellectual property rights of whatever nature in the Software, including any modifications made thereto) are and shall remain the property of Chef Mate+.
+**Source Code.** Plus Mobile Apps LLC retains copyright and all other intellectual property rights in the Source Code. The Apache License is a license to use the Source Code on its stated terms — it does not transfer ownership. Contributions submitted to the Source Code repository are governed by the inbound-equals-outbound convention described in Section 5 of the Apache License.
 
-Chef Mate+ reserves the right to grant licenses to use the Software to third parties.
+**Service.** Plus Mobile Apps LLC retains all right, title, and interest in and to the Service, including all related infrastructure, databases, content provided by Plus Mobile Apps LLC, and any modifications, enhancements, or derivative works of the Service.
+
+**Trademarks.** Plus Mobile Apps LLC retains all right, title, and interest in and to the Trademarks. The Trademarks are not licensed under the Apache License and are not granted to you under this EULA.
+
+Plus Mobile Apps LLC reserves the right to grant licenses to the Source Code, the Service, and the Trademarks to third parties on any terms it chooses.
 
 ## Termination
 
 This EULA agreement is effective from the date you first use the Software and shall continue until terminated. You may terminate it at any time upon written notice to Chef Mate+.
 
-It will also terminate immediately if you fail to comply with any term of this EULA agreement. Upon such termination, the licenses granted by this EULA agreement will immediately terminate and you agree to stop all access and use of the Software. The provisions that by their nature continue and survive will survive any termination of this EULA agreement.
+It will also terminate immediately if you fail to comply with any term of this EULA agreement. Upon such termination, the license to use the Service granted by this EULA agreement will immediately terminate and you agree to stop all access to and use of the Service. Your rights to the Source Code under the Apache License are independent of this EULA and continue in accordance with the terms of the Apache License. The provisions that by their nature continue and survive will survive any termination of this EULA agreement.
 
 ## Governing Law
 
