@@ -60,3 +60,24 @@
   border-color: #c7431a;
   color: #fff !important;
 }
+
+.md-button.btn-android {
+  background-color: #01875F;
+  border-color: #01875F;
+  color: #fff !important;
+}
+.md-button.btn-android:hover,
+.md-button.btn-android:focus {
+  background-color: #016A4A;
+  border-color: #016A4A;
+  color: #fff !important;
+}
+
+.md-button.btn-ios-soon {
+  background-color: transparent;
+  border-color: var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color--light) !important;
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.75;
+}
