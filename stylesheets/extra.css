@@ -1,0 +1,77 @@
+:root {
+  --md-primary-fg-color:        #2A52A4;
+  --md-primary-fg-color--light: #4A6CB8;
+  --md-primary-fg-color--dark:  #1F3D7A;
+  --md-accent-fg-color:         #4A6CB8;
+  --md-accent-fg-color--transparent: rgba(74, 108, 184, 0.1);
+}
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.download-buttons .md-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.download-buttons .md-button .twemoji {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.md-button.btn-mac {
+  background-color: #000;
+  border-color: #000;
+  color: #fff !important;
+}
+.md-button.btn-mac:hover,
+.md-button.btn-mac:focus {
+  background-color: #333;
+  border-color: #333;
+  color: #fff !important;
+}
+
+.md-button.btn-windows {
+  background-color: #0078d4;
+  border-color: #0078d4;
+  color: #fff !important;
+}
+.md-button.btn-windows:hover,
+.md-button.btn-windows:focus {
+  background-color: #005a9e;
+  border-color: #005a9e;
+  color: #fff !important;
+}
+
+.md-button.btn-linux {
+  background-color: #e95420;
+  border-color: #e95420;
+  color: #fff !important;
+}
+.md-button.btn-linux:hover,
+.md-button.btn-linux:focus {
+  background-color: #c7431a;
+  border-color: #c7431a;
+  color: #fff !important;
+}
+
+.download-buttons .store-badge {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+.download-buttons .store-badge img {
+  display: block;
+  height: 60px;
+  width: auto;
+}
