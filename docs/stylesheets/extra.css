@@ -75,15 +75,3 @@
   height: 60px;
   width: auto;
 }
-
-.md-button.btn-ios-soon {
-  background-color: transparent;
-  border-color: var(--md-default-fg-color--lighter);
-  color: var(--md-default-fg-color--light) !important;
-  cursor: not-allowed;
-  pointer-events: none;
-  opacity: 0.75;
-  height: 60px;
-  display: inline-flex;
-  align-items: center;
-}
