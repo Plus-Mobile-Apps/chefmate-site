@@ -7,7 +7,7 @@ Get Chef Mate on your favorite platform.
 <div class="download-buttons" markdown>
 
 [![Get it on Google Play](assets/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.plusmobileapps.chefmate){ .store-badge }
-[:fontawesome-brands-app-store-ios: App Store — Coming Soon](#){ .md-button .btn-ios-soon }
+[![Download on the App Store](assets/app-store-badge.svg)](https://apps.apple.com/app/chef-mate/id6762543578){ .store-badge }
 
 </div>
 
