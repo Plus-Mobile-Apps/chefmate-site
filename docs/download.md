@@ -25,6 +25,14 @@ Get the latest desktop release of Chef Mate for your platform.
 
 </div>
 
+Windows users can also get Chef Mate from the Microsoft Store:
+
+<div class="download-buttons" markdown>
+
+[![Get it from Microsoft Store](assets/microsoft-store-badge.svg)](https://apps.microsoft.com/detail/9nkbvzcq99wf){ .store-badge }
+
+</div>
+
 Looking for an older version or the Android APK? Visit the [full releases page on GitHub](https://github.com/Plus-Mobile-Apps/chef-mate/releases).
 
 <script>
