@@ -20,8 +20,15 @@ Get the latest desktop release of Chef Mate for your platform.
 <div class="download-buttons" markdown>
 
 [:fontawesome-brands-apple: macOS (.dmg)](https://github.com/Plus-Mobile-Apps/chef-mate/releases/latest){ .md-button .btn-mac #download-mac }
-[:fontawesome-brands-windows: Windows (.msi)](https://github.com/Plus-Mobile-Apps/chef-mate/releases/latest){ .md-button .btn-windows #download-windows }
 [:fontawesome-brands-linux: Linux (.deb)](https://github.com/Plus-Mobile-Apps/chef-mate/releases/latest){ .md-button .btn-linux #download-linux }
+
+</div>
+
+Windows users can get Chef Mate from the Microsoft Store, which keeps the app up to date automatically:
+
+<div class="download-buttons" markdown>
+
+[![Get it from Microsoft Store](assets/microsoft-store-badge.svg)](https://apps.microsoft.com/detail/9nkbvzcq99wf){ .store-badge }
 
 </div>
 
@@ -31,7 +38,6 @@ Looking for an older version or the Android APK? Visit the [full releases page o
 (function () {
   var patterns = {
     "download-mac": /^Chef\.Mate-.*\.dmg$/,
-    "download-windows": /^Chef\.Mate-.*\.msi$/,
     "download-linux": /^chef-mate_.*_amd64\.deb$/
   };
 
