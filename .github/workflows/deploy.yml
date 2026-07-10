@@ -20,4 +20,23 @@ jobs:
 
       - run: pip install mkdocs-material
 
-      - run: mkdocs gh-deploy --force
+      - name: Build site
+        run: mkdocs build
+
+      # MkDocs silently drops any dot-prefixed path (e.g. .well-known), so the app-association
+      # files can't live in docs/. Inject them into the built site here instead. The .nojekyll
+      # marker that `ghp-import --no-jekyll` writes below is what stops GitHub Pages from
+      # stripping the dot-directory again during publish.
+      - name: Add app-association files (.well-known)
+        run: |
+          mkdir -p site/.well-known
+          cp well-known/assetlinks.json site/.well-known/assetlinks.json
+          cp well-known/apple-app-site-association site/.well-known/apple-app-site-association
+
+      # Same publish step `mkdocs gh-deploy` runs under the hood, but against our patched site/.
+      - name: Deploy to GitHub Pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          ghp-import --no-jekyll --push --force --no-history \
+            --message "Deploy docs ${GITHUB_SHA}" site
