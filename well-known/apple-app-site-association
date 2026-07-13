@@ -1,4 +1,23 @@
 {
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "Y89258SF5P.com.plusmobileapps.chefmate.ChefMate"
+        ],
+        "components": [
+          {
+            "/": "/notifications",
+            "comment": "Open the in-app Notifications screen"
+          },
+          {
+            "/": "/notifications/*",
+            "comment": "Open the in-app Notifications screen"
+          }
+        ]
+      }
+    ]
+  },
   "webcredentials": {
     "apps": [
       "Y89258SF5P.com.plusmobileapps.chefmate.ChefMate"
