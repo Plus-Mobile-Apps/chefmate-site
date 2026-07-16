@@ -13,6 +13,10 @@
           {
             "/": "/notifications/*",
             "comment": "Open the in-app Notifications screen"
+          },
+          {
+            "/": "/recipe/*",
+            "comment": "Open a shared public recipe"
           }
         ]
       }
