@@ -11,6 +11,10 @@ purposes:
    instead of the website. Currently mapped: `/notifications` →
    in-app Notifications; `/recipe/*` → the shared public recipe.
 
+When the app *isn't* installed, `/recipe/<uuid>` has to render on the web
+instead. That page is [`../web/404.html`](../web/404.html) — see the note there
+and in the deploy workflow for why the fallback lives in `404.html`.
+
 They **cannot** live in `docs/` — MkDocs silently drops any dot-prefixed path.
 Instead the deploy workflow (`.github/workflows/deploy.yml`) copies them into the
 built `site/.well-known/` and publishes with `.nojekyll` so GitHub Pages doesn't
@@ -63,9 +67,11 @@ files:
   entry iOS never fetches this AASA file.
 - **Android** — the `get_login_creds` autofill needs nothing beyond the field
   hints, but App Links additionally need an `https` `VIEW` intent filter with
-  `android:autoVerify="true"` for `chefmate.plusmobileapps.com` (scoped to the
-  `/notifications` path today). The paths the app claims are governed by that
-  intent filter; `handle_all_urls` here is domain-level.
+  `android:autoVerify="true"` for `chefmate.plusmobileapps.com` (with
+  `pathPrefix` entries for `/notifications` and `/recipe` today). The paths the
+  app claims are governed by that intent filter; `handle_all_urls` here is
+  domain-level — which is why adding a path on Android needs no change to
+  `assetlinks.json`, while iOS needs a matching `components` entry in the AASA.
 
 ## Verify after deploy
 

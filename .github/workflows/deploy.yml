@@ -33,6 +33,31 @@ jobs:
           cp well-known/assetlinks.json site/.well-known/assetlinks.json
           cp well-known/apple-app-site-association site/.well-known/apple-app-site-association
 
+      # GitHub Pages serves 404.html for any path with no file behind it, which is the only way to
+      # route a dynamic /recipe/<uuid> on a static host — so web/404.html is the shared-recipe page.
+      # This overwrites the 404.html mkdocs build just generated, and must run after it.
+      #
+      # The anon key is a public, RLS-scoped credential (it ships inside the mobile apps too), so
+      # it's not secret once deployed; keeping it in Actions secrets rather than the repo just means
+      # rotating it doesn't need a commit. Both secrets live in this repo's Settings → Secrets.
+      - name: Add shared-recipe page (404.html)
+        env:
+          SUPABASE_PROD_URL: ${{ secrets.SUPABASE_PROD_URL }}
+          SUPABASE_PROD_ANON_KEY: ${{ secrets.SUPABASE_PROD_ANON_KEY }}
+        run: |
+          if [ -z "$SUPABASE_PROD_URL" ] || [ -z "$SUPABASE_PROD_ANON_KEY" ]; then
+            echo "::error::SUPABASE_PROD_URL and SUPABASE_PROD_ANON_KEY must be set as repository secrets"
+            exit 1
+          fi
+          sed -e "s|__SUPABASE_PROD_URL__|${SUPABASE_PROD_URL}|g" \
+              -e "s|__SUPABASE_PROD_ANON_KEY__|${SUPABASE_PROD_ANON_KEY}|g" \
+              web/404.html > site/404.html
+          # Fail loudly rather than publishing a page that fetches from a literal placeholder.
+          if grep -q "__SUPABASE_PROD" site/404.html; then
+            echo "::error::404.html still contains an unsubstituted placeholder"
+            exit 1
+          fi
+
       # Same publish step `mkdocs gh-deploy` runs under the hood, but against our patched site/.
       - name: Deploy to GitHub Pages
         run: |
