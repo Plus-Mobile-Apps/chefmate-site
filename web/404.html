@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chef Mate</title>
+<link rel="icon" href="/assets/favicon.png">
+
+<!-- Generic preview only. This page is served by GitHub Pages' 404 fallback, so there is no
+     server to render per-recipe Open Graph tags; every /recipe/<uuid> link unfurls the same. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chef Mate">
+<meta property="og:title" content="A recipe shared from Chef Mate">
+<meta property="og:description" content="View this recipe and get Chef Mate — your personal cooking companion.">
+<meta property="og:image" content="https://chefmate.plusmobileapps.com/assets/logo.png">
+<meta name="twitter:card" content="summary">
+
+<script>
+  // Smart App Banner: iOS shows "OPEN" when Chef Mate is installed and "VIEW" (App Store) when it
+  // isn't. Built here rather than as static markup so app-argument carries the recipe URL through
+  // to the app. Safari reads this tag while parsing <head>, so it must be appended before <body>.
+  (function () {
+    var meta = document.createElement("meta");
+    meta.name = "apple-itunes-app";
+    meta.content = "app-id=6762543578, app-argument=" + window.location.href;
+    document.head.appendChild(meta);
+  })();
+</script>
+
+<style>
+  :root {
+    --brand: #2A52A4;
+    --brand-dark: #1F3D7A;
+    --text: #1f2129;
+    --muted: #5d6270;
+    --line: #e4e6ec;
+    --bg-soft: #f6f7fa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    background: #fff;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem 4rem; }
+  a { color: var(--brand); }
+
+  /* Download / open-app banner */
+  .banner {
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+    padding: 1rem 1.25rem;
+  }
+  .banner-inner {
+    max-width: 720px; margin: 0 auto;
+    display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  }
+  .banner img.mark { width: 44px; height: 44px; border-radius: 10px; flex: none; }
+  .banner-copy { flex: 1 1 14rem; min-width: 0; }
+  .banner-copy strong { display: block; font-size: 1rem; }
+  .banner-copy span { color: var(--muted); font-size: 0.875rem; }
+  .cta { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+  .cta img { height: 40px; width: auto; display: block; }
+  .open-app {
+    display: none; /* enabled for Android only */
+    background: var(--brand); color: #fff; text-decoration: none;
+    padding: 0.55rem 1.1rem; border-radius: 6px; font-weight: 500; white-space: nowrap;
+  }
+  .open-app:hover { background: var(--brand-dark); }
+
+  /* Recipe */
+  h1 { font-size: 2rem; line-height: 1.25; margin: 2rem 0 0.5rem; }
+  .description { color: var(--muted); margin: 0 0 1.25rem; }
+  .hero { width: 100%; height: auto; border-radius: 12px; margin: 1.5rem 0 0; display: block; }
+  .facts { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 2rem; padding: 0; list-style: none; }
+  .facts li {
+    background: var(--bg-soft); border: 1px solid var(--line); border-radius: 999px;
+    padding: 0.25rem 0.85rem; font-size: 0.875rem;
+  }
+  .facts li b { font-weight: 500; }
+  h2 { font-size: 1.35rem; margin: 2.25rem 0 0.75rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--line); }
+  .lines { list-style: none; margin: 0; padding: 0; }
+  .lines li { padding: 0.4rem 0; border-bottom: 1px solid var(--line); }
+  .lines li:last-child { border-bottom: 0; }
+  .lines li.section { font-weight: 700; border-bottom: 0; padding-top: 1.1rem; }
+  .step { display: flex; gap: 0.65rem; padding: 0.5rem 0; }
+  .step .num { font-weight: 700; color: var(--brand); flex: none; }
+  .step.section { font-weight: 700; padding-top: 1.1rem; }
+  .source { margin-top: 2rem; font-size: 0.9rem; color: var(--muted); word-break: break-all; }
+
+  /* States */
+  .state { text-align: center; padding: 4rem 0 2rem; }
+  .state h1 { margin-top: 0; }
+  .state p { color: var(--muted); }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<div class="banner" id="banner" hidden>
+  <div class="banner-inner">
+    <img class="mark" src="/assets/logo.png" alt="">
+    <div class="banner-copy">
+      <strong>Get the Chef Mate app</strong>
+      <span>Save this recipe, plan meals, and build grocery lists automatically.</span>
+    </div>
+    <div class="cta">
+      <a class="open-app" id="open-app" href="#">Open in app</a>
+      <a href="https://apps.apple.com/app/chef-mate/id6762543578">
+        <img src="/assets/app-store-badge.svg" alt="Download on the App Store">
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.plusmobileapps.chefmate">
+        <img src="/assets/google-play-badge.png" alt="Get it on Google Play">
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div id="loading" class="state hidden">
+    <p>Loading recipe…</p>
+  </div>
+
+  <div id="unavailable" class="state hidden">
+    <h1>This recipe isn't available</h1>
+    <p>It may have been deleted, or it's no longer shared publicly.</p>
+    <p><a href="/">Go to Chef Mate</a></p>
+  </div>
+
+  <div id="notfound" class="state hidden">
+    <h1>Page not found</h1>
+    <p>We couldn't find the page you were looking for.</p>
+    <p><a href="/">Go to the Chef Mate home page</a></p>
+  </div>
+
+  <article id="recipe" class="hidden"></article>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // Supabase project (production). The anon key is a public, RLS-scoped credential and is meant to
+  // ship in client code — the recipes table's row-level security is what actually restricts reads
+  // to rows flagged is_public.
+  var SUPABASE_URL = "__SUPABASE_PROD_URL__";
+  var SUPABASE_ANON_KEY = "__SUPABASE_PROD_ANON_KEY__";
+
+  var PLAY_URL = "https://play.google.com/store/apps/details?id=com.plusmobileapps.chefmate";
+
+  // Mirrors RemoteRecipe.kt. Enumerated rather than select=* so columns that are nobody else's
+  // business (owner_id, client_id) or personal to the owner (is_favorite, star_rating) can't leak
+  // if RLS is ever loosened.
+  var COLUMNS = [
+    "id", "title", "description", "ingredients", "directions", "image_url",
+    "source_url", "servings", "prep_time", "cook_time", "total_time", "calories"
+  ].join(",");
+
+  var RECIPE_PATH = /^\/recipe\/([0-9a-fA-F-]{36})\/?$/;
+
+  function show(id) { document.getElementById(id).classList.remove("hidden"); }
+  function hide(id) { document.getElementById(id).classList.add("hidden"); }
+
+  // ---- Formatting helpers: these mirror the app so web and in-app rendering agree.
+  // splitLines + IngredientSection.isHeader + directionSteps in the chef-mate repo.
+
+  function splitLines(text) {
+    return String(text == null ? "" : text)
+      .split("\n")
+      .filter(function (line) { return line.trim() !== ""; });
+  }
+
+  // A line is a section header when it ends in a colon, e.g. "For the sauce:".
+  function isHeader(line) {
+    var trimmed = line.trim();
+    return trimmed.length > 1 && trimmed.charAt(trimmed.length - 1) === ":";
+  }
+
+  // Steps are never auto-numbered: a number shows only where the author typed one.
+  var LEADING_ENUMERATOR = /^\s*(\d+)[.)]\s+/;
+
+  function httpsUrl(value) {
+    if (!value) return null;
+    try {
+      var parsed = new URL(value, window.location.href);
+      return parsed.protocol === "https:" ? parsed.href : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function minutes(value) {
+    return typeof value === "number" && value > 0 ? value + " min" : null;
+  }
+
+  function el(tag, className, text) {
+    var node = document.createElement(tag);
+    if (className) node.className = className;
+    // textContent, never innerHTML: every field below is user-authored content served from our
+    // own origin, so interpolating it as markup would be stored XSS.
+    if (text != null) node.textContent = text;
+    return node;
+  }
+
+  // ---- Rendering
+
+  function renderFacts(recipe) {
+    var facts = [
+      ["Serves", recipe.servings > 0 ? String(recipe.servings) : null],
+      ["Prep", minutes(recipe.prep_time)],
+      ["Cook", minutes(recipe.cook_time)],
+      ["Total", minutes(recipe.total_time)],
+      ["Calories", recipe.calories > 0 ? String(recipe.calories) : null]
+    ].filter(function (pair) { return pair[1]; });
+
+    if (!facts.length) return null;
+
+    var list = el("ul", "facts");
+    facts.forEach(function (pair) {
+      var item = el("li");
+      item.appendChild(el("b", null, pair[0] + ": "));
+      item.appendChild(document.createTextNode(pair[1]));
+      list.appendChild(item);
+    });
+    return list;
+  }
+
+  function renderIngredients(text) {
+    var list = el("ul", "lines");
+    splitLines(text).forEach(function (line) {
+      list.appendChild(el("li", isHeader(line) ? "section" : null, line.trim()));
+    });
+    return list;
+  }
+
+  function renderDirections(text) {
+    var container = el("div");
+    splitLines(text).forEach(function (line) {
+      if (isHeader(line)) {
+        container.appendChild(el("div", "step section", line.trim()));
+        return;
+      }
+      var step = el("div", "step");
+      var match = LEADING_ENUMERATOR.exec(line);
+      if (match) {
+        step.appendChild(el("span", "num", match[1] + "."));
+        step.appendChild(el("span", null, line.slice(match[0].length)));
+      } else {
+        step.appendChild(el("span", null, line.trim()));
+      }
+      container.appendChild(step);
+    });
+    return container;
+  }
+
+  function renderRecipe(recipe) {
+    var root = document.getElementById("recipe");
+    var image = httpsUrl(recipe.image_url);
+    if (image) {
+      var hero = el("img", "hero");
+      hero.src = image;
+      hero.alt = recipe.title || "";
+      root.appendChild(hero);
+    }
+
+    root.appendChild(el("h1", null, recipe.title || "Untitled recipe"));
+    if (recipe.description) root.appendChild(el("p", "description", recipe.description));
+
+    var facts = renderFacts(recipe);
+    if (facts) root.appendChild(facts);
+
+    if (splitLines(recipe.ingredients).length) {
+      root.appendChild(el("h2", null, "Ingredients"));
+      root.appendChild(renderIngredients(recipe.ingredients));
+    }
+
+    if (splitLines(recipe.directions).length) {
+      root.appendChild(el("h2", null, "Directions"));
+      root.appendChild(renderDirections(recipe.directions));
+    }
+
+    var source = httpsUrl(recipe.source_url);
+    if (source) {
+      var wrapper = el("p", "source", "Source: ");
+      var link = el("a", null, source);
+      link.href = source;
+      link.rel = "nofollow noopener ugc";
+      wrapper.appendChild(link);
+      root.appendChild(wrapper);
+    }
+
+    document.title = (recipe.title || "Recipe") + " — Chef Mate";
+    show("recipe");
+  }
+
+  // ---- Banner
+
+  function setUpBanner(uuid) {
+    var banner = document.getElementById("banner");
+    banner.hidden = false;
+
+    // Universal Links / App Links open the app before this page ever loads, so the button below
+    // only matters when they don't fire — e.g. a pasted URL, or an in-app browser. On Android an
+    // intent:// URL opens the app if installed and falls back to the Play Store if not. iOS has no
+    // equivalent (a chefmate:// redirect errors when not installed), so it relies on the Smart App
+    // Banner in <head> instead.
+    if (/Android/i.test(navigator.userAgent)) {
+      var openApp = document.getElementById("open-app");
+      openApp.href = "intent://chefmate.plusmobileapps.com/recipe/" + uuid +
+        "#Intent;scheme=https;package=com.plusmobileapps.chefmate;S.browser_fallback_url=" +
+        encodeURIComponent(PLAY_URL) + ";end";
+      openApp.style.display = "inline-block";
+    }
+  }
+
+  // ---- Routing: GitHub Pages serves this file for any unmatched path, which is the only way a
+  // dynamic /recipe/<uuid> route can be handled on a static host.
+
+  var match = RECIPE_PATH.exec(window.location.pathname);
+  if (!match) {
+    show("notfound");
+    return;
+  }
+
+  var uuid = match[1];
+  setUpBanner(uuid);
+  show("loading");
+
+  var query = SUPABASE_URL + "/rest/v1/recipes?id=eq." + encodeURIComponent(uuid) +
+    "&is_public=is.true&select=" + COLUMNS + "&limit=1";
+
+  fetch(query, {
+    headers: {
+      apikey: SUPABASE_ANON_KEY,
+      Authorization: "Bearer " + SUPABASE_ANON_KEY,
+      Accept: "application/json"
+    }
+  })
+    .then(function (response) {
+      if (!response.ok) throw new Error("Supabase " + response.status);
+      return response.json();
+    })
+    .then(function (rows) {
+      hide("loading");
+      // A private, deleted, or unknown recipe is indistinguishable here — RLS simply returns no
+      // rows — and that's deliberate: it keeps the response from confirming a recipe exists.
+      if (!rows || !rows.length) {
+        show("unavailable");
+        return;
+      }
+      renderRecipe(rows[0]);
+    })
+    .catch(function () {
+      hide("loading");
+      show("unavailable");
+    });
+})();
+</script>
+
+</body>
+</html>
