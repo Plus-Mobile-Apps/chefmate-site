@@ -9,7 +9,7 @@ purposes:
    `https://chefmate.plusmobileapps.com/…` link (e.g. the "Open Chef Mate" button
    in a collaboration-invite email) opens the app straight to the matching screen
    instead of the website. Currently mapped: `/notifications` →
-   in-app Notifications.
+   in-app Notifications; `/recipe/*` → the shared public recipe.
 
 They **cannot** live in `docs/` — MkDocs silently drops any dot-prefixed path.
 Instead the deploy workflow (`.github/workflows/deploy.yml`) copies them into the
