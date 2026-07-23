@@ -33,6 +33,15 @@ jobs:
           cp well-known/assetlinks.json site/.well-known/assetlinks.json
           cp well-known/apple-app-site-association site/.well-known/apple-app-site-association
 
+      # Serve /notifications as a real page so the invite-email link (an https:// URL, which desktop
+      # apps can't claim) can hand the browser off to the chefmate:// scheme. Without this, GitHub
+      # Pages falls back to 404.html (the recipe page) and the link dead-ends on "Page not found".
+      # Mobile App Links / Universal Links still intercept /notifications before this page loads.
+      - name: Add notifications redirect page (/notifications)
+        run: |
+          mkdir -p site/notifications
+          cp web/notifications.html site/notifications/index.html
+
       # GitHub Pages serves 404.html for any path with no file behind it, which is the only way to
       # route a dynamic /recipe/<uuid> on a static host — so web/404.html is the shared-recipe page.
       # This overwrites the 404.html mkdocs build just generated, and must run after it.
