@@ -13,13 +13,20 @@ Get Chef Mate on your favorite platform.
 
 ## Desktop
 
-Get the latest desktop release of Chef Mate for your platform.
+Mac users can get Chef Mate from the Mac App Store, which keeps the app up to date automatically:
+
+<div class="download-buttons" markdown>
+
+[![Download on the Mac App Store](assets/mac-app-store-badge.svg)](https://apps.apple.com/us/app/chef-mate/id6762543578){ .store-badge }
+
+</div>
+
+Get the latest desktop release of Chef Mate for other platforms.
 
 <p id="latest-release-version"><em>Loading latest release…</em></p>
 
 <div class="download-buttons" markdown>
 
-[:fontawesome-brands-apple: macOS (.dmg)](https://github.com/Plus-Mobile-Apps/chef-mate/releases/latest){ .md-button .btn-mac #download-mac }
 [:fontawesome-brands-linux: Linux (.deb)](https://github.com/Plus-Mobile-Apps/chef-mate/releases/latest){ .md-button .btn-linux #download-linux }
 
 </div>
@@ -37,7 +44,6 @@ Looking for an older version or the Android APK? Visit the [full releases page o
 <script>
 (function () {
   var patterns = {
-    "download-mac": /^Chef\.Mate-.*\.dmg$/,
     "download-linux": /^chef-mate_.*_amd64\.deb$/
   };
 
